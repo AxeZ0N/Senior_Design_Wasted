@@ -1,0 +1,7 @@
+Name,Volts,Amps,PowerFactor
+motor1-1,480,115,0.8451
+motor2-1,5,1,0.8
+motor1-2,20,10,0.5
+motor2-2,3,0.5,0.6
+motor1-3,480,115,0.8451
+motor2-3,480,75,0.8451
