@@ -14,8 +14,8 @@ import pandas
 ## output: Importer Verification Window -> No user modification needed, manual name entry ##
 
 class cell_creation_window():
-    def __init__(self, root, cell_name):
 
+    def __init__(self, root, cell_name):
         ## Boilerplate window generation, don't touch ##
         root.title("Config Tool")                                                                                    #Title of window
         self.config_tool_mainframe = ttk.Frame(root, padding="3 3 12 12")                                            #distance from edge of window: padding=<pixels_top pixels_bottom pixels_left pixels_right>
