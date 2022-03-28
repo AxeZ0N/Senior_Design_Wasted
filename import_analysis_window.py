@@ -6,6 +6,7 @@ from tkinter import ttk
 
 ## Sub-menu import ##
 import existing_cell_import
+from update_import_viewer import import_viewer
 ## Sub-menu import ##
 
 
@@ -24,16 +25,13 @@ class import_analysis:
         root.rowconfigure(0, weight=1)
     ## Boilerplate window generation, don't touch ##
 
+        self.path_to_machine_file = StringVar()
 
     ## Import splash ##
-        ttk.Label(import_analysis_mainframe, text="Import Analysis").grid(column=2, row=0, sticky=(N))                  #Label is a widget and can be assigned position inside root window with Grid=<ROWxCOL>, alignment
+        ttk.Label(import_analysis_mainframe, text="Import Analysis").grid(column=3, row=0, sticky=(N))                  #Label is a widget and can be assigned position inside root window with Grid=<ROWxCOL>, alignment
     ## Import splash ##
 
-        self.cell = StringVar()
-        cell_entry = ttk.Entry(import_analysis_mainframe, width=7, textvariable=self.cell)
-        cell_entry.grid(column=2, row=2, sticky=(N))
-
-        ttk.Button(import_analysis_mainframe, text="Name Cell", command=import_analysis).grid(column=1, row=3, sticky=W)
+        ttk.Button(import_analysis_mainframe, text="Select File", command=lambda:import_viewer(root, self.path_to_machine_file)).grid(column=3, row=3, sticky=N)
 
     ## Shortcut for padding widgets ##
         for child in import_analysis_mainframe.winfo_children():                                                        #Each child of the root window is indexed

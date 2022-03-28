@@ -5,8 +5,8 @@ from tkinter import ttk
 
 
 ## Sub-menu import ##
-import new_analysis
-import import_analysis
+import new_analysis_window
+import import_analysis_window
 ## Sub-menu import ##
 
 
@@ -33,8 +33,8 @@ class welcome_window:
 
 
     ## Button labels and callbacks ##
-        ttk.Button(mainframe, text="New", command=lambda:new_analysis.new_analysis(root)).grid(column=1, row=3, sticky=W)           #Buttons allow callbacks: command= lambda: <any_function_call>
-        ttk.Button(mainframe, text="Import", command=lambda:import_analysis.import_analysis(root)).grid(column=3, row=3, sticky=W)  #Widgets can be assigned position with Grid=<ROWxCOL>, alignment
+        ttk.Button(mainframe, text="New", command=lambda:new_analysis_window.new_analysis(root)).grid(column=1, row=3, sticky=W)           #Buttons allow callbacks: command= lambda: <any_function_call>
+        ttk.Button(mainframe, text="Import", command=lambda:import_analysis_window.import_analysis(root)).grid(column=3, row=3, sticky=W)  #Widgets can be assigned position with Grid=<ROWxCOL>, alignment
     ## Button labels and callbacks ##
 
 
