@@ -4,7 +4,7 @@ from tkinter import ttk
 ## GUI library import ##
 
 import simulation_classes
-import update_import_viewer
+import import_viewer
 import pandas
 
 
@@ -53,7 +53,7 @@ class cell_creation_window():
 
 
     def run_import_viewer(self, root):
-        update_import_viewer.import_viewer(root, self.path_to_machine_file)
+        import_viewer.import_viewer(root, self.path_to_machine_file)
 
         machine_generate_button = ttk.Button(self.config_tool_mainframe, text="Click to generate machines", 
             command=lambda:self.generate_machines(machine_generate_button)).grid(column=3, row=2, sticky=N)
