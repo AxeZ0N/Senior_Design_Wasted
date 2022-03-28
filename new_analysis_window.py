@@ -56,5 +56,5 @@ class new_analysis:
             child.grid_configure(padx=5, pady=5)                                                                                    #Let each child have padding around edges of padx/y=<pixels>
     ## Shortcut for padding widgets ##
 
-        cell_entry.focus()
+        cell_entry.focus()                                                                                      #Puts cursor in text box on window opening
 
